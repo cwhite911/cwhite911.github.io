@@ -41,13 +41,21 @@ const Publications = () => {
                     distance="30px"
                   >
                     <div className="publications-wrapper__text">
+                      <h1 className="publications-wrapper__text-title">{year || ''}</h1>
                       <h3 className="publications-wrapper__text-title">{title || ''}</h3>
                       <div>
-                        <p>{year || ''}</p>
-                        <p>{authors || ''}</p>
+                        <p className="text-color-main">{authors || ''}</p>
                         <p className="mb-4">{journal || ''}</p>
                       </div>
-                      <p>DOI: {doi || ''}</p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn text-color-main"
+                        href={doi}
+                      >
+                        {doi}
+                      </a>
+
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
