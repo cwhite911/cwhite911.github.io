@@ -58,7 +58,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'development_year.png',
-    title: 'Modeling Regional Nutrient Lading',
+    title: 'Nutrient Loading Modeling',
     info:
       'Working with a team, we are developing a spatial-temporal bayesian model to forecast future nutrient loading levels affecting regional drinking water supplies.',
     info2: '',
