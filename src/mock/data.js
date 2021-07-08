@@ -22,7 +22,7 @@ export const aboutData = {
     'I am a Ph.D. Candidate working on a degree in Geospatial Analytics from the Center for Geospatial Analytics at North Carolina State University. I am the network coordinator for TomorrowNow an NSF funded research coordination network, which is developing a spatially explicit serious gaming platform for smart and connect communities that enables equitable community engagement through participatory modeling. Through stakeholder workshops and public symposiums, we are co-developing a prototype of TomorrowNow focusing on stormwater management issues in the Triangle region of North Carolina.',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -42,8 +42,8 @@ export const projectsData = [
     title: 'Participatory Modeling',
     info: 'Co-design Spatially Explicit Serious Game Specifications with Participatory Modeling',
     info2: '',
-    url: '',
-    repo: 'https://github.com/tomorrownow/FCMAnalysis', // if no repo, the button will not show up
+    url: 'https://github.com/tomorrownow/PyFCM',
+    repo: 'https://github.com/tomorrownow/PyFCM', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -54,6 +54,16 @@ export const projectsData = [
       'Rapid-DSM: a tool that creates a priority queue of areas with a high likelihood of change in the urban topography, enabling rapid UAS updates of DSM through data fusion.',
     url: '',
     repo: 'https://github.com/ncsu-geoforall-lab/rapid-dsm', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'development_year.png',
+    title: 'Modeling Regional Nutrient Lading',
+    info:
+      'Working with a team, we are developing a spatial-temporal bayesian model to forecast future nutrient loading levels affecting regional drinking water supplies.',
+    info2: '',
+    url: '',
+    repo: 'https://github.ncsu.edu/FallsJordan/nutrient-loading-model', // if no repo, the button will not show up
   },
 ];
 
@@ -68,7 +78,6 @@ export const publicationsData = [
     journal: 'ISPRS Archives, Volume XLII-3/W11',
     year: '2020',
     url: 'https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-3-W11/155/2020/',
-    doi: 'https://doi.org/10.5194/isprs-archives-XLII-3-W11-155-2020', // if no repo, the button will not show up
   },
 ];
 

@@ -28,7 +28,7 @@ const Publications = () => {
         <div className="publications-wrapper">
           <Title title="Publications" />
           {publications.map((publication) => {
-            const { title, authors, journal, url, doi, year, img, id } = publication;
+            const { title, authors, journal, url, year, img, id } = publication;
 
             return (
               <Row key={id}>
@@ -47,14 +47,6 @@ const Publications = () => {
                         <p className="text-color-main">{authors || ''}</p>
                         <p className="mb-4">{journal || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn text-color-main"
-                        href={doi}
-                      >
-                        {doi}
-                      </a>
 
                       <a
                         target="_blank"
