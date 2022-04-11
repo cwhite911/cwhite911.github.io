@@ -42,7 +42,7 @@ export const projectsData = [
     title: 'Participatory Modeling',
     info: 'Co-design Spatially Explicit Serious Game Specifications with Participatory Modeling',
     info2: '',
-    url: 'https://github.com/tomorrownow/PyFCM',
+    url: 'https://cwhite911.github.io/hydro-grass-viz/#12/35.7099/-78.6319/0/45',
     repo: 'https://github.com/tomorrownow/PyFCM', // if no repo, the button will not show up
   },
   {
@@ -53,7 +53,7 @@ export const projectsData = [
     info2:
       'Rapid-DSM: a tool that creates a priority queue of areas with a high likelihood of change in the urban topography, enabling rapid UAS updates of DSM through data fusion.',
     url: '',
-    repo: 'https://github.com/ncsu-geoforall-lab/rapid-dsm', // if no repo, the button will not show up
+    repo: 'https://github.com/ncsu-geoforall-lab/rapid-dem-binder', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -69,6 +69,27 @@ export const projectsData = [
 
 // PUBLICATIONS DATA
 export const publicationsData = [
+  {
+    id: nanoid(),
+    img: 'remotesensing-040222.png',
+    title:
+      'Rapid-DEM: Rapid Topographic Updates through Satellite Change Detection and UAS Data Fusion',
+    authors: 'White C.T., Reckling W., Petrasova A., Meentemeyer R.K., Mitasova, H.',
+    journal: 'Remote Sensing',
+    year: '2022',
+    url: 'https://www.mdpi.com/2072-4292/14/7/1718',
+  },
+  {
+    id: nanoid(),
+    img: 'land2021.png',
+    title:
+      'Spatially Explicit Fuzzy Cognitive Mapping for Participatory Modeling of Stormwater Management',
+    authors:
+      'White C.T., Mitasova, H., BenDor, T.K., Foy K., Pala O., Vukomanovic J., Meentemeyer R.K.',
+    journal: 'Land',
+    year: '2021',
+    url: 'https://www.mdpi.com/2073-445X/10/11/1114',
+  },
   {
     id: nanoid(),
     img: 'AllYearsRFPCA.png',
