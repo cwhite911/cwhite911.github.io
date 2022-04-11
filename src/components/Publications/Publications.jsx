@@ -28,7 +28,7 @@ const Publications = () => {
         <div className="publications-wrapper">
           <Title title="Publications" />
           {publications.map((publication) => {
-            const { title, authors, journal, url, year, img, id } = publication;
+            const { title, authors, journal, url, year, img, doi, id } = publication;
 
             return (
               <Row key={id}>
@@ -46,8 +46,16 @@ const Publications = () => {
                       <div>
                         <p className="text-color-main">{authors || ''}</p>
                         <p className="mb-4">{journal || ''}</p>
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          href={doi || '#!'}
+                          className="text-color-main"
+                          style={{ paddingBottom: 5 }}
+                        >
+                          {doi || ''}
+                        </a>
                       </div>
-
                       <a
                         target="_blank"
                         rel="noopener noreferrer"

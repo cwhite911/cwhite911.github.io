@@ -75,9 +75,10 @@ export const publicationsData = [
     title:
       'Rapid-DEM: Rapid Topographic Updates through Satellite Change Detection and UAS Data Fusion',
     authors: 'White C.T., Reckling W., Petrasova A., Meentemeyer R.K., Mitasova, H.',
-    journal: 'Remote Sensing',
+    journal: 'Remote Sensing 2022, 14(7), 1718;',
     year: '2022',
     url: 'https://www.mdpi.com/2072-4292/14/7/1718',
+    doi: 'https://doi.org/10.3390/rs14071718',
   },
   {
     id: nanoid(),
@@ -86,9 +87,10 @@ export const publicationsData = [
       'Spatially Explicit Fuzzy Cognitive Mapping for Participatory Modeling of Stormwater Management',
     authors:
       'White C.T., Mitasova, H., BenDor, T.K., Foy K., Pala O., Vukomanovic J., Meentemeyer R.K.',
-    journal: 'Land',
+    journal: 'Land 2021, 10(11), 1114;',
     year: '2021',
     url: 'https://www.mdpi.com/2073-445X/10/11/1114',
+    doi: 'https://doi.org/10.3390/land10111114',
   },
   {
     id: nanoid(),
@@ -99,6 +101,7 @@ export const publicationsData = [
     journal: 'ISPRS Archives, Volume XLII-3/W11',
     year: '2020',
     url: 'https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-3-W11/155/2020/',
+    doi: 'https://doi.org/10.5194/isprs-archives-XLII-3-W11-155-2020',
   },
 ];
 
