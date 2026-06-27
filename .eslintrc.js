@@ -14,6 +14,16 @@ module.exports = {
     'react/static-property-placement': 'off', // disable if necessary
     'react/jsx-props-no-spreading': 'off', // disable if necessary
     'react/require-default-props': 'off',
+    'react/function-component-definition': [
+      'error',
+      { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' },
+    ],
   },
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['babel-preset-gatsby'],
+    },
+  },
 };

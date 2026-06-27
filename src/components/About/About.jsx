@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
@@ -10,16 +10,9 @@ const About = () => {
   const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
+    setIsDesktop(window.innerWidth > 769);
   }, []);
 
   return (
@@ -28,14 +21,14 @@ const About = () => {
         <Title title="About Me" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
+            <Fade direction="up" duration={1000} delay={600} triggerOnce>
               <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
               </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <Fade direction={isDesktop ? 'left' : 'up'} duration={1000} delay={1000} triggerOnce>
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">{paragraphOne || ''}</p>
                 <p className="about-wrapper__info-text">{paragraphTwo || ''}</p>

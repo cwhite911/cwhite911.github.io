@@ -17,7 +17,7 @@ import {
   footerData,
 } from '../mock/data';
 
-function App() {
+const App = () => {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
@@ -44,6 +44,6 @@ function App() {
       <Footer />
     </PortfolioProvider>
   );
-}
+};
 
 export default App;

@@ -12,45 +12,46 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public",
+    "prepare": "husky"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
-    "gatsby": "^2.23.7",
-    "gatsby-image": "^2.4.7",
-    "gatsby-plugin-manifest": "^2.4.12",
-    "gatsby-plugin-offline": "^3.2.11",
-    "gatsby-plugin-react-helmet": "^3.3.4",
-    "gatsby-plugin-sass": "^2.3.4",
-    "gatsby-plugin-sharp": "^2.6.12",
-    "gatsby-source-filesystem": "^2.3.12",
-    "gatsby-transformer-sharp": "^2.5.5",
-    "nanoid": "^3.1.10",
-    "node-sass": "^7.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.13.1",
-    "react-github-btn": "^1.2.0",
-    "react-helmet": "^6.1.0",
-    "react-reveal": "^1.2.2",
-    "react-scroll": "^1.7.16",
-    "react-tilt": "^0.1.4"
+    "@emotion/react": "^11.14.0",
+    "bootstrap": "^5.3.8",
+    "gatsby": "^5.16.1",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-manifest": "^5.16.0",
+    "gatsby-plugin-offline": "^6.16.0",
+    "gatsby-plugin-sass": "^6.16.0",
+    "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
+    "nanoid": "^5.1.16",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-awesome-reveal": "^4.3.1",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^18.3.1",
+    "react-github-btn": "^1.4.0",
+    "react-scroll": "^1.9.3",
+    "react-tilt": "^1.0.2",
+    "sass": "^1.101.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "7.2.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4",
-    "gh-pages": "^3.1.0",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5"
+    "@babel/core": "^7.28.0",
+    "@babel/eslint-parser": "^7.28.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.8.5"
   },
   "repository": {
     "type": "git",
@@ -59,19 +60,15 @@
   "bugs": {
     "url": "https://github.com/cwhite911/cwhite911.github.io/issues"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.+(js|jsx)": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ],
     "*.+(json|css|md)": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
+  },
+  "overrides": {
+    "sharp": "^0.33.5"
   }
 }
