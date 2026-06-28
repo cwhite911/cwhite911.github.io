@@ -1,7 +1,7 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const ProjectImg = ({ filename, alt }) => {
   const data = useStaticQuery(graphql`

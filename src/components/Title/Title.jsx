@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
-import PropTypes from 'prop-types';
 
 const Title = ({ title }) => (
   <Fade direction="up" duration={1000} delay={300} triggerOnce>

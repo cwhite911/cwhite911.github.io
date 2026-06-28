@@ -1,9 +1,5 @@
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/no-danger */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable jsx-a11y/html-has-lang */
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const HTML = ({
   htmlAttributes,
@@ -22,6 +18,7 @@ const HTML = ({
     </head>
     <body {...bodyAttributes}>
       {preBodyComponents}
+      {/* biome-ignore lint/security/noDangerouslySetInnerHtml: required by Gatsby's custom HTML template to inject the rendered app body */}
       <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
       {postBodyComponents}
     </body>

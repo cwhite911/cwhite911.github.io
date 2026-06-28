@@ -1,9 +1,9 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
-import { Container, Row, Col } from 'react-bootstrap';
-import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
+import { Col, Container, Row } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
+import AboutImg from '../Image/AboutImg';
+import Title from '../Title/Title';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);

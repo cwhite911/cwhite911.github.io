@@ -1,7 +1,7 @@
-import React from 'react';
 import { Link } from 'gatsby';
-import { Container } from 'react-bootstrap';
+import React from 'react';
 import { Fade } from 'react-awesome-reveal';
+import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../style/main.scss';
