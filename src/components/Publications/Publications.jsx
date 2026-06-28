@@ -1,25 +1,18 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Fade } from 'react-awesome-reveal';
+import { Col, Container, Row } from 'react-bootstrap';
+import { Tilt } from 'react-tilt';
 import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import Title from '../Title/Title';
 
 const Publications = () => {
   const { publications } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
+    setIsDesktop(window.innerWidth > 769);
   }, []);
 
   return (
@@ -34,11 +27,10 @@ const Publications = () => {
               <Row key={id}>
                 <Col lg={4} sm={12}>
                   <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
+                    direction={isDesktop ? 'left' : 'up'}
                     duration={1000}
                     delay={500}
-                    distance="30px"
+                    triggerOnce
                   >
                     <div className="publications-wrapper__text">
                       <h1 className="publications-wrapper__text-title">{year || ''}</h1>
@@ -69,11 +61,10 @@ const Publications = () => {
                 </Col>
                 <Col lg={8} sm={12}>
                   <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
+                    direction={isDesktop ? 'right' : 'up'}
                     duration={1000}
                     delay={1000}
-                    distance="30px"
+                    triggerOnce
                   >
                     <div className="publications-wrapper__image">
                       <a

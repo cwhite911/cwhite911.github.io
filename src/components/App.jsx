@@ -1,23 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import Hero from './Hero/Hero';
-import About from './About/About';
-import Projects from './Projects/Projects';
-import Publications from './Publications/Publications';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
-
+import React, { useEffect, useState } from 'react';
 import { PortfolioProvider } from '../context/context';
-
 import {
-  heroData,
   aboutData,
-  projectsData,
-  publicationsData,
   contactData,
   footerData,
+  heroData,
+  projectsData,
+  publicationsData,
 } from '../mock/data';
+import About from './About/About';
+import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
+import Hero from './Hero/Hero';
+import Projects from './Projects/Projects';
+import Publications from './Publications/Publications';
 
-function App() {
+const App = () => {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
@@ -44,6 +42,6 @@ function App() {
       <Footer />
     </PortfolioProvider>
   );
-}
+};
 
 export default App;
