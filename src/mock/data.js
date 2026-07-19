@@ -2,72 +2,88 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Corey T. White | Geospatial Software Engineer',
+  lang: 'en',
+  description:
+    'Corey T. White, Ph.D., Geospatial Software Engineer at NC State\u2019s Center for Geospatial Analytics, Founder & CEO of OpenPlains Inc., and a GRASS core contributor and maintainer. NSF and USDA funded research in geomorphometry, hydrologic simulation, and post-disaster terrain analysis.',
 };
 
 // HERO DATA
 export const heroData = {
   title: '',
   name: 'Corey White',
-  subtitle: 'I am a PhD Candidate working to define the future of Smart and Connected Communities',
-  cta: '',
+  subtitle:
+    'I\u2019m a geospatial software engineer and founder building open-source tools that bring scientific earth modeling to the cloud.',
+  cta: 'Learn more',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    'I am a Ph.D. Candidate working on a degree in Geospatial Analytics from the Center for Geospatial Analytics at North Carolina State University. I am the network coordinator for TomorrowNow an NSF funded research coordination network, which is developing a spatially explicit serious gaming platform for smart and connect communities that enables equitable community engagement through participatory modeling. Through stakeholder workshops and public symposiums, we are co-developing a prototype of TomorrowNow focusing on stormwater management issues in the Triangle region of North Carolina.',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: '', // if no resume, the button will not show up
+    'I\u2019m a Geospatial Software Engineer at the Center for Geospatial Analytics at North Carolina State University, where I co-develop interactive participatory-modeling applications that help communities make socio-environmental decisions. My research spans geomorphometry, hydrologic and overland-flow modeling, land-use and land-cover change, urban growth forecasting, and post-disaster topographic change detection with UAS and lidar. This work is funded by the National Science Foundation and USDA, most recently as Co-PI on the NSF Open Geoscience Accelerator award building the contributor pipeline for open geoscience software.',
+  paragraphTwo:
+    'I\u2019m also the Founder & CEO of OpenPlains Inc., where I build cloud-native platforms that bring the power of GRASS and Actinia to the web. As a long-time core contributor and maintainer of GRASS, I work to lower the barriers to open, reproducible, science-based geospatial computing through tools like the t.stac addon and a stack of open-source libraries for interactive modeling.',
+  paragraphThree:
+    'I earned my Ph.D. in Geospatial Analytics from NC State in 2023. These days I\u2019m co-authoring a book on the GRASS geocomputation engine (CRC Press / Taylor & Francis) and a chapter on geomorphometry for Elsevier, teaching GIS and UAS mapping, and flying as an FAA Part 107 remote pilot.',
+  resume: '/cv.pdf',
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'TomorrowNowProject.png',
-    title: 'TomorrowNow',
-    info: 'TomorrowNow a Spatially Explicit Serious Game for Geospatial Participatory Modeling',
-    info2: '',
-    url: 'https://cnr.ncsu.edu/geospatial/research/tomorrownow/',
-    repo: 'https://github.com/tomorrownow', // if no repo, the button will not show up
+    img: 'openplains.png',
+    title: 'OpenPlains',
+    info: 'A cloud-native platform that brings GRASS and Actinia to the web, letting researchers and communities build interactive geospatial participatory-modeling applications without specialized infrastructure.',
+    info2:
+      'Founder & CEO. Built on an open-source stack: django-actinia, grass-js-client, react-openplains, and more.',
+    url: 'https://openplains.com',
+    repo: 'https://github.com/OpenPlainsInc',
   },
   {
     id: nanoid(),
-    img: 'fcm.png',
-    title: 'Participatory Modeling',
-    info: 'Co-design Spatially Explicit Serious Game Specifications with Participatory Modeling',
-    info2: '',
-    url: 'https://cwhite911.github.io/hydro-grass-viz/#12/35.7099/-78.6319/0/45',
-    repo: 'https://github.com/tomorrownow/PyFCM', // if no repo, the button will not show up
+    img: 'grass.png',
+    title: 'GRASS',
+    info: 'A powerful open-source geospatial processing engine with 400+ core tools and 400+ community addons. I\u2019m a core contributor and maintainer.',
+    info2:
+      'Author of t.stac, an addon for working with SpatioTemporal Asset Catalogs (STAC) directly inside GRASS.',
+    url: 'https://grass.osgeo.org',
+    repo: 'https://github.com/OSGeo/grass',
   },
   {
     id: nanoid(),
     img: 'rapid-dsm.png',
-    title: 'Rapid-DSM',
-    info: 'Rapid Urban DSM Updates through Satellite Change Detection and UAS Data Fusion',
-    info2:
-      'Rapid-DSM: a tool that creates a priority queue of areas with a high likelihood of change in the urban topography, enabling rapid UAS updates of DSM through data fusion.',
+    title: 'Rapid-DEM',
+    info: 'Rapid urban digital-surface-model updates through satellite change detection and UAS data fusion: a priority queue that flags where the landscape has changed so drones re-survey only what matters.',
+    info2: '',
     url: '',
-    repo: 'https://github.com/ncsu-geoforall-lab/rapid-dem-binder', // if no repo, the button will not show up
+    repo: 'https://github.com/ncsu-geoforall-lab/rapid-dem-binder',
   },
   {
     id: nanoid(),
-    img: 'development_year.png',
-    title: 'Nutrient Loading Modeling',
-    info: 'Working with a team, we are developing a spatial-temporal bayesian model to forecast future nutrient loading levels affecting regional drinking water supplies.',
+    img: 'TomorrowNowProject.png',
+    title: 'TomorrowNow',
+    info: 'An NSF-funded research coordination network developing a spatially explicit serious game for geospatial participatory modeling, co-developed with stakeholders around stormwater management in North Carolina\u2019s Triangle region.',
     info2: '',
-    url: '',
-    repo: 'https://github.ncsu.edu/FallsJordan/nutrient-loading-model', // if no repo, the button will not show up
+    url: 'https://cnr.ncsu.edu/geospatial/research/tomorrownow/',
+    repo: 'https://github.com/tomorrownow',
   },
 ];
 
 // PUBLICATIONS DATA
 export const publicationsData = [
+  {
+    id: nanoid(),
+    img: 'openplains.png',
+    title: 'An open-source platform for geospatial participatory modeling in the cloud',
+    authors:
+      'White C.T., Petrasova A., Petras V., Tateosian L.G., Vukomanovic J., Mitasova H., Meentemeyer R.K.',
+    journal: 'Environmental Modelling & Software, 167, 105767',
+    year: '2023',
+    url: 'https://www.sciencedirect.com/science/article/pii/S1364815223001536',
+    doi: 'https://doi.org/10.1016/j.envsoft.2023.105767',
+  },
   {
     id: nanoid(),
     img: 'remotesensing-040222.png',
@@ -95,7 +111,7 @@ export const publicationsData = [
     id: nanoid(),
     img: 'AllYearsRFPCA.png',
     title:
-      'AUTOMATED LAND COVER CHANGE DETECTION THROUGH RAPID UAS UPDATES OF DIGITAL SURFACE MODELS',
+      'Automated Land Cover Change Detection through Rapid UAS Updates of Digital Surface Models',
     authors: 'White C., Petrasova A., Reckling W., Mitasova, H.',
     journal: 'ISPRS Archives, Volume XLII-3/W11',
     year: '2020',
@@ -104,10 +120,51 @@ export const publicationsData = [
   },
 ];
 
+// FUNDING DATA
+export const fundingData = [
+  {
+    id: nanoid(),
+    title: 'Open Geoscience Accelerator: Building the Contributor Pipeline',
+    agency: 'National Science Foundation, GEO OSE Track 2',
+    award: 'Award #2606178',
+    url: 'https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2606178',
+    role: 'Co-Principal Investigator',
+    period: '2026',
+  },
+  {
+    id: nanoid(),
+    title: 'Growing GRASS OSE for Worldwide Access to Multidisciplinary Geospatial Analytics',
+    agency: 'National Science Foundation, POSE Phase II',
+    award: 'Award #2303651',
+    url: 'https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2303651',
+    role: 'Senior Personnel',
+    period: '2023 to 2026',
+  },
+  {
+    id: nanoid(),
+    title: 'Adaptation of the SIMWE Water Flow Simulation Model for Dynamic Soil Survey Data',
+    agency: 'USDA Natural Resources Conservation Service',
+    award: 'Award #NR233A750023C043',
+    url: '',
+    role: 'Lead Researcher',
+    period: '',
+  },
+  {
+    id: nanoid(),
+    title:
+      'Co-Developing Mountains-to-Coast Resilience Solutions through Integrated Science and Practice',
+    agency: 'National Science Foundation, Regional Resilience Innovation Incubator',
+    award: 'Award #2519237',
+    url: 'https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2519237',
+    role: 'Senior Personnel',
+    period: '',
+  },
+];
+
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
+  cta: 'I\u2019m always glad to talk about open-source geospatial software, GRASS, participatory modeling, or a new collaboration.',
+  btn: 'Get in touch',
   email: 'ctwhite@ncsu.edu',
 };
 
@@ -116,23 +173,23 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: 'https://twitter.com/plottgis',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/corey-white-a6080312b',
-    },
-    {
-      id: nanoid(),
-      name: 'researchgate',
-      url: 'https://www.researchgate.net/profile/Corey_White4',
+      url: 'https://www.linkedin.com/in/corey-white-ph-d-a6080312b',
     },
     {
       id: nanoid(),
       name: 'github',
       url: 'https://github.com/cwhite911',
+    },
+    {
+      id: nanoid(),
+      name: 'graduation-cap',
+      url: 'https://scholar.google.com/citations?user=PQIUwlcAAAAJ',
+    },
+    {
+      id: nanoid(),
+      name: 'globe',
+      url: 'https://openplains.com',
     },
   ],
 };
