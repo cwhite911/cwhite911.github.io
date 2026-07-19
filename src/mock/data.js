@@ -26,7 +26,7 @@ export const aboutData = {
     'I\u2019m also the Founder & CEO of OpenPlains Inc., where I build cloud-native platforms that bring the power of GRASS and Actinia to the web. As a long-time core contributor and maintainer of GRASS, I work to lower the barriers to open, reproducible, science-based geospatial computing through tools like the t.stac addon and a stack of open-source libraries for interactive modeling.',
   paragraphThree:
     'I earned my Ph.D. in Geospatial Analytics from NC State in 2023. These days I\u2019m co-authoring a book on the GRASS geocomputation engine (CRC Press / Taylor & Francis) and a chapter on geomorphometry for Elsevier, teaching GIS and UAS mapping, and flying as an FAA Part 107 remote pilot.',
-  resume: '/cv.pdf',
+  resume: '',
 };
 
 // PROJECTS DATA
