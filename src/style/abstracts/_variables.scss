@@ -14,6 +14,10 @@ $dark-grey: #333333;
 
 $dark-blue-text: #1f2d38; // For Headings
 
+// FONTS (OpenPlains stack; Open Sans covers platforms without Tahoma/Verdana)
+$font-stack: Tahoma, Verdana, 'Open Sans', sans-serif;
+$font-mono: Consolas, Monaco, 'Courier New', monospace;
+
 // FONT SIZE
 $default-font-size: 1.6rem;
 $big-font-size: 4rem;

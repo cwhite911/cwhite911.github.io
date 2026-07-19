@@ -71,6 +71,120 @@ export const projectsData = [
   },
 ];
 
+// GRASS TOOLS DATA
+export const grassToolsData = {
+  lead: 'Merged addons I have authored for GRASS, a free and open source geospatial processing engine.',
+  tools: [
+    {
+      id: nanoid(),
+      name: 't.stac',
+      subtools: 't.stac.catalog · t.stac.collection · t.stac.item',
+      info: 'A toolset for exploring metadata and ingesting SpatioTemporal Asset Catalog (STAC) items, collections, and catalogs directly inside GRASS.',
+      manual: 'https://grass.osgeo.org/grass-stable/manuals/addons/t.stac.html',
+      repo: 'https://github.com/OSGeo/grass-addons/tree/grass8/src/temporal/t.stac',
+    },
+    {
+      id: nanoid(),
+      name: 'r.in.ssurgo',
+      subtools: '',
+      info: 'Imports soil data from the USDA NRCS Soil Survey Geographic Database (SSURGO) from either the Soil Data Access online API or a local file geodatabase. Developed for the USDA NRCS Dynamic Soil Survey project.',
+      manual: 'https://grass.osgeo.org/grass-stable/manuals/addons/r.in.ssurgo.html',
+      repo: 'https://github.com/OSGeo/grass-addons/tree/grass8/src/raster/r.in.ssurgo',
+    },
+    {
+      id: nanoid(),
+      name: 'r.hand',
+      subtools: '',
+      info: 'Computes Height Above Nearest Drainage (HAND) from a DEM and generates flood inundation extent maps or time series for user-defined water levels.',
+      manual: 'https://grass.osgeo.org/grass-stable/manuals/addons/r.hand.html',
+      repo: 'https://github.com/OSGeo/grass-addons/tree/grass8/src/raster/r.hand',
+    },
+    {
+      id: nanoid(),
+      name: 'v.surf.rst.cv',
+      subtools: '',
+      info: 'Cross-validation of the regularized spline with tension (RST) surface model to optimize the tension and smoothing parameters of v.surf.rst.',
+      manual: 'https://grass.osgeo.org/grass-stable/manuals/addons/v.surf.rst.cv.html',
+      repo: 'https://github.com/OSGeo/grass-addons/tree/grass8/src/vector/v.surf.rst.cv',
+    },
+    {
+      id: nanoid(),
+      name: 'r.random.walk',
+      subtools: '',
+      info: 'Generates 2D random walks across the computational region, with control over steps, directions, self-avoiding behavior, and parallel walkers, for stochastic surface-process modeling.',
+      manual: 'https://grass.osgeo.org/grass-stable/manuals/addons/r.random.walk.html',
+      repo: 'https://github.com/OSGeo/grass-addons/tree/grass8/src/raster/r.random.walk',
+    },
+  ],
+};
+
+// TEACHING DATA
+export const coursesData = [
+  {
+    id: nanoid(),
+    title: 'GIS/MEA 582: Geospatial Modeling and Analysis',
+    meta: 'North Carolina State University · Instructor of Record',
+    url: 'https://ncsu-geoforall-lab.github.io/geospatial-modeling-course/',
+  },
+  {
+    id: nanoid(),
+    title: 'GIS/MEA 584: Mapping and Analytics Using UAS',
+    meta: 'North Carolina State University · Instructor of Record',
+    url: 'https://ncsu-geoforall-lab.github.io/gis-584-uas-course/',
+  },
+];
+
+export const workshopsData = [
+  {
+    id: nanoid(),
+    title: 'Geomorphometry with GRASS',
+    meta: 'Tutorial series · 2026',
+    url: 'https://doi.org/10.5281/zenodo.19403682',
+  },
+  {
+    id: nanoid(),
+    title: 'GRASS Addon Development with Python',
+    meta: 'FOSS4G North America 2025',
+    url: 'https://github.com/ncsu-geoforall-lab/FOSS4GNA-2025-workshop',
+  },
+  {
+    id: nanoid(),
+    title: 'Propagating DEM Uncertainty to Stream Extraction using GRASS',
+    meta: 'Geomorphometry 2025, Perugia, Italy',
+    url: 'https://github.com/ncsu-geoforall-lab/geomorphometry2025_workshop',
+  },
+  {
+    id: nanoid(),
+    title: 'Geospatial Data Science with GRASS',
+    meta: 'NCGIS 2025 · with Vaclav Petras',
+    url: 'https://github.com/ncsu-geoforall-lab/grass-data-science-ncgis-2025',
+  },
+  {
+    id: nanoid(),
+    title: 'Developing Web Applications with GRASS',
+    meta: 'FOSS4G North America 2024',
+    url: 'https://github.com/OpenPlainsInc/foss4gna-2024-workshop',
+  },
+  {
+    id: nanoid(),
+    title: 'Geoprocessing with GRASS and Jupyter Notebooks',
+    meta: 'U.S. Department of the Interior webinar · 2024',
+    url: 'https://doi.org/10.5281/zenodo.13367159',
+  },
+  {
+    id: nanoid(),
+    title: 'Introduction to Geoprocessing with GRASS',
+    meta: 'SMathHacks, NC School of Science and Mathematics · 2024 and 2025',
+    url: 'https://github.com/OpenPlainsInc/intro-to-geoprocessing-workshop',
+  },
+  {
+    id: nanoid(),
+    title: 'Develop Geospatial Workflows and Custom Tools with GRASS',
+    meta: 'FOSS4G North America 2023 · with Vaclav Petras',
+    url: 'https://github.com/ncsu-geoforall-lab/develop-tools-with-grass-foss4gna-2023',
+  },
+];
+
 // PUBLICATIONS DATA
 export const publicationsData = [
   {
