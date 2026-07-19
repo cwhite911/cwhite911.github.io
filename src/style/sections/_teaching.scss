@@ -1,0 +1,65 @@
+#teaching {
+  color: $dark-blue-text;
+  padding-bottom: 10rem;
+
+  @include respond(phone) {
+    padding-bottom: 5rem;
+  }
+
+  .teaching-wrapper {
+    &__subtitle {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $secondary-color;
+      text-align: left;
+      margin: 1rem 0 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+
+    &__card {
+      background: $white-color;
+      border-left: 5px solid $accent-color;
+      border-radius: 4px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+      padding: 2.4rem 2.4rem 2rem;
+      margin-bottom: 3rem;
+      min-height: 14rem;
+      text-align: left;
+
+      @include respond(phone) {
+        min-height: 0;
+        padding: 2rem 1.6rem 1.6rem;
+        margin-bottom: 2rem;
+      }
+
+      &-title {
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: $dark-blue-text;
+
+        @include respond(phone) {
+          font-size: 1.7rem;
+        }
+      }
+
+      &-meta {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+      }
+
+      &-link {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0;
+
+        & a {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}

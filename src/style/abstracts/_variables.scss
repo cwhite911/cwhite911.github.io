@@ -1,15 +1,22 @@
 // COLORS
-$primary-color: #02aab0;
-$secondary-color: #00cdac;
+// Steel-blue geospatial palette (aligned with OpenPlains brand)
+$primary-color: #243f52; // deep steel blue
+$secondary-color: #4a6a82; // steel blue
+$accent-color: #d07944; // warm orange, used sparingly as a pop
 
-// $primary-color: #43cea2;
-// $secondary-color: #185a9d;
+// Legacy teal theme (kept for reference)
+// $primary-color: #02aab0;
+// $secondary-color: #00cdac;
 
 $white-color: #fff;
 
 $dark-grey: #333333;
 
-$dark-blue-text: #272341; // For Headings
+$dark-blue-text: #1f2d38; // For Headings
+
+// FONTS (OpenPlains stack; Open Sans covers platforms without Tahoma/Verdana)
+$font-stack: Tahoma, Verdana, 'Open Sans', sans-serif;
+$font-mono: Consolas, Monaco, 'Courier New', monospace;
 
 // FONT SIZE
 $default-font-size: 1.6rem;
