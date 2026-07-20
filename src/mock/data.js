@@ -34,6 +34,9 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'openplains.png',
+    banner: 'walk',
+    bannerLabel: 'OpenPlains',
+    bannerSublabel: 'Terrain built live by a D-infinity Gaussian random walk',
     title: 'OpenPlains',
     info: 'A cloud-native platform that brings GRASS and Actinia to the web, letting researchers and communities build interactive geospatial participatory-modeling applications without specialized infrastructure.',
     info2:
@@ -44,6 +47,9 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'grass.png',
+    banner: 'flow',
+    bannerLabel: 'GRASS',
+    bannerSublabel: 'Core Contributor · Maintainer · Flow accumulation over the terrain above',
     title: 'GRASS',
     info: 'A powerful open-source geospatial processing engine with 400+ core tools and 400+ community addons. I\u2019m a core contributor and maintainer.',
     info2:

@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Tilt } from 'react-tilt';
 import PortfolioContext from '../../context/context';
 import ProjectImg from '../Image/ProjectImg';
+import TerrainBanner from '../TerrainBanner/TerrainBanner';
 import Title from '../Title/Title';
 
 const Projects = () => {
@@ -21,7 +22,8 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Selected Work" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id, banner, bannerLabel, bannerSublabel } =
+              project;
 
             return (
               <Row key={id}>
@@ -90,7 +92,15 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            {banner ? (
+                              <TerrainBanner
+                                variant={banner}
+                                label={bannerLabel || title}
+                                sublabel={bannerSublabel}
+                              />
+                            ) : (
+                              <ProjectImg alt={title} filename={img} />
+                            )}
                           </div>
                         </Tilt>
                       </a>
