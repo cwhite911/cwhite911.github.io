@@ -2,13 +2,19 @@ import React, { useContext } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { Col, Container, Row } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
+import ProjectImg from '../Image/ProjectImg';
 import Title from '../Title/Title';
 
 const TeachingCard = ({ item }) => {
-  const { title, meta, url } = item;
+  const { title, meta, url, img } = item;
   return (
     <Fade direction="up" duration={800} delay={400} triggerOnce>
       <div className="teaching-wrapper__card">
+        {img && (
+          <div className="teaching-wrapper__card-image">
+            <ProjectImg alt={title} filename={img} className="teaching-wrapper__card-img" />
+          </div>
+        )}
         <h3 className="teaching-wrapper__card-title">{title}</h3>
         {meta && <p className="teaching-wrapper__card-meta">{meta}</p>}
         {url && (
@@ -24,7 +30,7 @@ const TeachingCard = ({ item }) => {
 };
 
 const Teaching = () => {
-  const { courses, workshops } = useContext(PortfolioContext);
+  const { courses, tutorials, workshops } = useContext(PortfolioContext);
 
   return (
     <section id="teaching">
@@ -36,6 +42,14 @@ const Teaching = () => {
             {courses?.map((course) => (
               <Col lg={6} sm={12} key={course.id}>
                 <TeachingCard item={course} />
+              </Col>
+            ))}
+          </Row>
+          <h3 className="teaching-wrapper__subtitle">Tutorials</h3>
+          <Row>
+            {tutorials?.map((tutorial) => (
+              <Col lg={6} sm={12} key={tutorial.id}>
+                <TeachingCard item={tutorial} />
               </Col>
             ))}
           </Row>

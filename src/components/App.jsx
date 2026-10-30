@@ -10,6 +10,7 @@ import {
   heroData,
   projectsData,
   publicationsData,
+  tutorialsData,
   workshopsData,
 } from '../mock/data';
 import About from './About/About';
@@ -30,6 +31,7 @@ const App = () => {
   const [publications, setPublications] = useState([]);
   const [funding, setFunding] = useState([]);
   const [courses, setCourses] = useState([]);
+  const [tutorials, setTutorials] = useState([]);
   const [workshops, setWorkshops] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
@@ -42,6 +44,7 @@ const App = () => {
     setPublications([...publicationsData]);
     setFunding([...fundingData]);
     setCourses([...coursesData]);
+    setTutorials([...tutorialsData]);
     setWorkshops([...workshopsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
@@ -57,6 +60,7 @@ const App = () => {
         publications,
         funding,
         courses,
+        tutorials,
         workshops,
         contact,
         footer,
