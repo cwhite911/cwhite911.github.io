@@ -3,7 +3,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const ProjectImg = ({ filename, alt }) => {
+const ProjectImg = ({ filename, alt, className }) => {
   const data = useStaticQuery(graphql`
     query {
       images: allFile {
@@ -26,12 +26,13 @@ const ProjectImg = ({ filename, alt }) => {
 
   const imageData = getImage(image.node);
 
-  return <GatsbyImage alt={alt} image={imageData} />;
+  return <GatsbyImage alt={alt} image={imageData} className={className} />;
 };
 
 ProjectImg.propTypes = {
   filename: PropTypes.string,
   alt: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default ProjectImg;
